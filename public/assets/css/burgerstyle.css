@@ -1,3 +1,16 @@
 body {
     text-align: center;
 }
+
+#burgerheader {
+    padding-top: 10px;
+}
+
+#burger {
+    vertical-align: top;
+}
+
+h1 {
+    display: inline-block;
+}
+
