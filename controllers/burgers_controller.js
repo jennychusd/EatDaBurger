@@ -28,6 +28,10 @@ router.post("/", function(req, res) {
 
 });
 
+router.put("/", function(req,res) {
+
+});
+
 
 // Export routes for server.js to use.
 module.exports = router;
