@@ -25,13 +25,22 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-
+    burger.insertOne([
+        "burger", "devoured"
+    ], [
+        req.body.addBurger, 0
+    ], function() {
+        res.redirect("/");
+    })
 });
 
-router.put("/", function(req,res) {
-
+router.put("/:id", function(req,res) {
+    burger.updateOne({
+        devoured: 1
+    }, "id=" + req.params.id, function() {
+        res.redirect("/");
+    })
 });
-
 
 // Export routes for server.js to use.
 module.exports = router;
