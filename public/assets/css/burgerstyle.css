@@ -2,15 +2,41 @@ body {
     text-align: center;
 }
 
-#burgerheader {
-    padding-top: 10px;
+h1 {
+    display: inline-block;
+    margin: 15px 0;
+}
+
+h2 {
+    margin: 10px;
+    border-bottom: solid 1px #999;
+}
+
+h4 {
+    margin: 5px 0;
+}
+
+input {
+    margin: 5px 0;
+}
+
+.jumbotron h1 {
+    font-size: 48px;
+}
+
+.servedName, .devouredName {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 8px;
 }
 
 #burger {
-    vertical-align: top;
+    vertical-align: text-bottom;
+    margin-right: 5px;
 }
 
-h1 {
-    display: inline-block;
+#burgerheader {
+    padding: 15px 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-
